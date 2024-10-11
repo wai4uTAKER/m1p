@@ -1,0 +1,97 @@
+\documentclass[12pt]{article}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{amsmath,amsfonts,amssymb}
+\usepackage{graphicx}
+\usepackage{a4wide}
+\title{Industrial project description: WeirdArtGram - A Generative Art Social Platform with Advanced Ranking System}
+\date{}
+\begin{document}
+\maketitle
+
+\section{Planning the industrial research project}
+Before planning the research, the analyst and (\textbf{expert}) discuss the key issues. After the long dash~--- our remarks.
+
+\begin{enumerate}
+\item Goal of the project. (\textbf{Expected development result.})~---
+Develop WeirdArtGram, a social media platform where users can generate and share unique, weird art pieces using AI-powered tools. Implement an advanced ranking system to enhance user experience, content discovery, and monetization potential. The platform will include features for user interaction, content curation, and monetization through ads and brand partnerships.
+
+\item Applied problem solved in the project. (\textbf{How will the result be used?})~--- 
+The platform will provide a space for creative expression and community building around generative weird art. The ranking system will solve the problem of content overload by highlighting high-quality, engaging artworks. It will be used to:
+1) Curate personalized feeds for users
+2) Identify trending and popular artworks
+3) Showcase promising new artists
+4) Provide valuable data for advertisers and brand partners
+
+\item Description of historical measured data. (\textbf{Formats and timing.})~--- 
+We will collect and analyze data on:
+1) User engagement metrics (daily active users, time spent, interactions)
+2) Content creation statistics (number of artworks generated, styles used)
+3) Artwork performance (likes, comments, shares, saves)
+4) User profiles and behavior patterns
+5) Ad performance and brand partnership metrics
+Data will be stored in SQL databases and analyzed in real-time for the ranking system, with weekly/monthly reports for overall performance.
+
+\item Quality criteria. (\textbf{How is the quality of the obtained result measured, what is in the report?})~--- 
+Success will be measured by:
+1) Accuracy of the ranking system (correlation with user engagement)
+2) User satisfaction with content discovery (measured through surveys)
+3) Increased user retention and time spent on the platform
+4) Growth in high-quality content creation
+5) Improved ad targeting and brand partnership value
+6) Overall platform growth and revenue generation
+
+\item Project feasibility. (\textbf{How to show that the project is feasible, list of possible risks.})~--- 
+Feasibility will be demonstrated through:
+1) Development of a prototype with basic generative art tools and a simple ranking algorithm
+2) Beta testing with a small user group to validate the ranking system
+Risks include:
+1) Complexity in developing a fair and effective ranking algorithm
+2) Potential for gaming the system by users
+3) Balancing between popular content and content diversity
+4) Ensuring the ranking system doesn't discourage new or niche artists
+
+\item Conditions necessary for successful project implementation. (\textbf{Organization of work.})~--- 
+1) Strong development team with expertise in AI, machine learning, and social network algorithms
+2) Access to large datasets for training the ranking system
+3) Partnerships with AI art generation tool providers
+4) Robust infrastructure to handle real-time ranking calculations
+5) Effective content moderation system integrated with the ranking system
+
+\item Solution methods. (\textbf{Procedure libraries.})~--- 
+1) Integration of existing AI art generation APIs (e.g., DALL-E, Midjourney, YandexART, Kandinsky)
+2) Custom machine learning models for the ranking system, incorporating:
+   - Hierarchical Navigable Small World (HNSW) graphs for efficient similarity search in high-dimensional space
+   - Facebook AI Similarity Search (FAISS) for scalable similarity search and clustering of dense vectors
+   - Transformer-based models for feature extraction from images and text:
+     * Vision Transformer (ViT) for image feature extraction
+     * BERT or RoBERTa for text feature extraction from captions and comments
+   - Ranking algorithms:
+     * SASRec (Self-Attentive Sequential Recommendation) for personalized content ranking
+     * LambdaMART for learning-to-rank tasks
+     * ListNet for list-wise ranking optimization
+3) Real-time data processing using technologies like Apache Kafka or Apache Flink
+4) Deep learning frameworks such as PyTorch or TensorFlow for model training and inference
+5) A/B testing framework to continuously improve the ranking algorithm
+6) Explainable AI techniques (e.g., SHAP values) to provide transparency in ranking decisions
+7) Time-aware recommendation systems to capture temporal dynamics in user preferences
+8) Multi-modal fusion techniques to combine features from different modalities (image, text, user behavior)
+9) Attention mechanisms for capturing long-term user interests and short-term preferences
+10) Reinforcement learning approaches (e.g., Multi-Armed Bandits) for exploration-exploitation trade-off in content recommendation
+\end{enumerate}
+
+\section{Research or development?}
+In other words, novelty or technological advancement?
+
+{Expert:} (\textbf{How long will the model be used? What will replace it in the future?})
+
+The initial ranking model will be used for approximately 12 months, with updates every 6 months. Replacements will include:
+
+1) Advanced transformer architectures for better feature extraction.
+2) HNSW graphs and FAISS for improved similarity search.
+3) Sophisticated ranking algorithms (SASRec, LambdaMART).
+4) Enhanced multi-modal fusion techniques.
+
+These will be phased in gradually, with the entire initial model substantially replaced within 24-36 months.
+\end{document}
+
